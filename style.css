@@ -1,136 +1,94 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
 body {
-    line-height:1;
+  margin: 0;
+  font-size: 28px;
+  font-family: karla, Helvetica, sans-serif;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+.header {
+  background-color: #f1f1f1;
+  padding: 0px;
+  text-align: center;
 }
 
-nav ul {
-    list-style:none;
+#navbar {
+  overflow: hidden;
+  background-color: #FFF3EB;
 }
 
-blockquote, q {
-    quotes:none;
+#navbar a {
+  float: right;
+  display: block;
+  color: #15005F;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+#navbar a:hover {
+  color: black;
 }
 
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+#navbar a.active {
+  background-color: #FFF3EB;
+  color: #15005F;
 }
 
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+.content {
+  padding: 16px;
 }
 
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-del {
-    text-decoration: line-through;
+.sticky + .content {
+  padding-top: 60px;
 }
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}     
-
 
 
 body {
-    background-color: #F4EAED;
-}
+    background-color: #ffffff;
+		color: #000000;
+	}
+
+	body, input, select, textarea {
+		color: #525252;
+		font-family: "karla", Helvetica, sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0.0375em;
+		line-height: 2;
+	}
       
       h1 {
-         font-family: 'Work Sans',  sans-serif;
-         font-size: 35px;
+         font-family: 'karla', sans-serif;
+         font-size: 80px;
          font-weight: 600;
          }  
 
       h2 {
-         font-family: 'Work Sans',  sans-serif;
+         font-family: 'karla', sans-serif;
          font-size: 35px;
          font-weight: 600;
          }
     
       h3 {
-         font-family: 'Work Sans',  sans-serif;
+         font-family: 'karla', sans-serif;
          font-size: 35px;
          font-weight: 300;
          }         
                     
       p {
-        font-family: 'Work Sans', sans-serif;
+        font-family: 'karla', sans-serif;
         margin-block-start: 0em;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
-        line-height: 20px;
+        line-height: 23px;
+        letter-spacing: 0.2px
+        color:#6b6b6b
         }
         
       .bio-image {
@@ -163,11 +121,17 @@ body {
            }
         
         a {
+           -moz-transition: border-bottom-color 0.25s ease-in-out;
+		   -webkit-transition: border-bottom-color 0.25s ease-in-out;
+		   -ms-transition: border-bottom-color 0.25s ease-in-out;
+		   transition: border-bottom-color 0.25s ease-in-out;
            text-decoration: none;
-            color: #BE2360;
-            font-weight: 400;
+           color: #BE2360;
+           font-weight: 400;
             
         }
         a:hover {
-  color: #FD1675;
+           color: #FD1675;
+            
+            
 }
