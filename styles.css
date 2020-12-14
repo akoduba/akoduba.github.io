@@ -154,15 +154,22 @@ nav {
 ul li {
     list-style: none;
 }
+a {
+    color: #CB0071;
+    text-decoration: none;
+        font-weight: 400;
+}
+
+a.hover{
+    color: #3F0D5E;
+}
 
 ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--text-color);
 }
-a.hover{
-    color: #3F0D5E;
-}
+
 
 @media only screen and (max-width: 1200px) {
     ul li a {
@@ -214,7 +221,7 @@ a.hover{
 }
 
 .portfolio__image {
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -296,9 +303,14 @@ textarea::placeholder {
 
 footer {
     padding: 30px 0;
-        padding: 30px 0;
+    padding: 30px 0;
     background-color: #fff2eb;
     padding: 20px;
+    background:url("images/footer.png")  repeat-x scroll top transparent; 
+    background-size:100% 130px;
+    height: 130px; 
+    width:100%; 
+    overflow:hidden
     
 }
 
@@ -426,3 +438,4 @@ footer {
 .nextportfolio__content a:hover {
     color: var(--secondary-color);
 }
+
