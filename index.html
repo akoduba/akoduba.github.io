@@ -13,8 +13,12 @@
 
 <body>
     <main>
-        <nav class="navigation">
+                      
+
+        <nav class="navigation"> 
+            <div id="cursor-blob"></div>
             <div class="container navigation__content">
+                
                 <a href="index.html" class="logo">Ayoola Princewill</a>
                 <ul class="nav">
                     <li><a href="about.html" class="nav__link">About</a></li>
@@ -25,30 +29,56 @@
         <header>
             <div class="container header__content">
                 <h1>
-                    Welcome to my personal portfolio. Nice to have you here! Feel free to explore my works and dont forget to have a good time.
+                    Welcome to my personal portfolio.     Nice to have you here! Feel free to explore my works and dont forget to have a good time.
                 </h1>
+                
             </div>
+            
         </header>
 
+        
+        
          <!-- Portfolio -->
         <section class="portfolio">
+            <div id="cursorBlob"></div>
             <div class="container portfolio__content">
                 
            
-                <h2>Portfolio</h2>
+                
                 <div class="portfolio__items"> 
                     <a href="portfolio-one.html" class="portfolio__item">
                         <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
+                        <h2>The White Liar Doorbell Prototype</h2>
                     </a>
+                    
+                    
+                    
                     <a href="portfolio-two.html" class="portfolio__item">
                         <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
+                        <h2>Self Service beauty Kiosk </h2>
                     </a>
+                    
+                    
                     <a href="portfolio-three.html" class="portfolio__item">
                         <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
+                        <h2>Photography</h2>
                     </a>
+                    
                     <a href="portfolio-four.html" class="portfolio__item">
                         <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
+                        <h2>Photography</h2>
                     </a>
+                    
+                    <a href="portfolio-three.html" class="portfolio__item">
+                        <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
+                        <h2>Audio Editing</h2>
+                    </a>
+                    
+                    <a href="portfolio-four.html" class="portfolio__item">
+                        <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
+                        <h2>Others </h2>
+                    </a>
+                    
                 </div>
             </div>
         </section>
@@ -73,6 +103,7 @@
         </section>
         <footer class="footer">
             <div class="container footer__content">
+                
                 <a href="#contact" class="footer__nav__link">Contact</a>
                 <ul class="footer__nav">
                     <li><a href="about.html" class="footer__nav__link"><img src="./images/instagram.svg" alt="Instagram"></a></li>
@@ -82,5 +113,34 @@
         </footer>
     </main>
 </body>
+    
+    <script>
+    const blobCursor = function() {
+  const cursor = document.querySelector('#cursor-blob');
+  const link = document.querySelector('.link');
+  
+  const setCursorPos = (e) => {
+    let posX = e.pageX;
+    let posY = e.pageY;
+    
+    cursor.style.top = posY - (cursor.offsetHeight/2) + 'px';
+    cursor.style.left = posX - (cursor.offsetWidth/2) + 'px';
+  }
+  
+  document.addEventListener('mousemove', setCursorPos);
+  
+  const setCursorHover = function() {
+    cursor.style.transform = 'scale(2.5)';
+  }
+  const removeCursorHover = function() {
+    cursor.style.transform = '';
+  }
+  
+  link.addEventListener('mouseover', setCursorHover);
+  link.addEventListener('mouseleave', removeCursorHover);
+}
+
+blobCursor();
+    </script>
 
 </html>
