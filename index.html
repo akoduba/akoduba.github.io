@@ -9,27 +9,32 @@
      <title>Ayoola Princewill</title>
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+     <div id="cursor-blob"></div>
 </head>
 
 <body>
+    
+           
+
+
     <main>
-                      
+              
 
         <nav class="navigation"> 
-            <div id="cursor-blob"></div>
+            
             <div class="container navigation__content">
                 
-                <a href="index.html" class="logo">Ayoola Princewill</a>
+                <a href="index.html" class="logo, link">Ayoola Princewill</a>
                 <ul class="nav">
-                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="about.html" class="nav__link" style="color: #CB0071; font-size: 20px; font weight: 600">About Me</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Introduction -->
         <header>
             <div class="container header__content">
-                <h1>
-                    Welcome to my personal portfolio.     Nice to have you here! Feel free to explore my works and dont forget to have a good time.
+                <h1 style="text-align:center;">
+                    Welcome to my personal portfolio.  Nice to have you here! Feel free to explore my works and dont forget to have a good time.
                 </h1>
                 
             </div>
@@ -40,27 +45,26 @@
         
          <!-- Portfolio -->
         <section class="portfolio">
-            <div id="cursorBlob"></div>
             <div class="container portfolio__content">
                 
            
                 
                 <div class="portfolio__items"> 
                     <a href="portfolio-one.html" class="portfolio__item">
-                        <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
-                        <h2>The White Liar Doorbell Prototype</h2>
+                        <img src="images/spencer-lbqLxgvLt0U-unsplash.jpg" alt="Portfolio Item" class="portfolio__image">
+                        <h2>Arduino Doorbell Prototype</h2>
                     </a>
                     
                     
                     
                     <a href="portfolio-two.html" class="portfolio__item">
-                        <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
-                        <h2>Self Service beauty Kiosk </h2>
+                        <img src="images/Welcome_1.0.jpg" alt="Portfolio Item" class="portfolio__image">
+                        <h2>Self Service Beauty App</h2>
                     </a>
                     
                     
                     <a href="portfolio-three.html" class="portfolio__item">
-                        <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
+                        <img src="images/IMG_3997-Edit.jpg" alt="Portfolio Item" class="portfolio__image">
                         <h2>Photography</h2>
                     </a>
                     
@@ -95,7 +99,7 @@
                             <input type="text" placeholder="Name">
                             <input type="text" placeholder="Email Address">
                         </div>
-                      <textarea name="message" id="message" cols="30" placeholder="message"></textarea>
+                      <textarea name="message" id="message" cols="30" placeholder="Message"></textarea>
                       <input type="submit" name="Send" id="submit">
                     </form>
                 </div>
@@ -104,7 +108,7 @@
         <footer class="footer">
             <div class="container footer__content">
                 
-                <a href="#contact" class="footer__nav__link">Contact</a>
+                <a href="#contact" class="footer__nav__link" style="color: #CB0071; font-size: 20px; font weight: 600">Contact</a>
                 <ul class="footer__nav">
                     <li><a href="about.html" class="footer__nav__link"><img src="./images/instagram.svg" alt="Instagram"></a></li>
                     <li><a href="about.html" class="footer__nav__link"><img src="./images/twitter.svg" alt="Instagram"></a></li>
@@ -115,7 +119,7 @@
 </body>
     
     <script>
-    const blobCursor = function() {
+   const blobCursor = function() {
   const cursor = document.querySelector('#cursor-blob');
   const link = document.querySelector('.link');
   
@@ -140,7 +144,7 @@
   link.addEventListener('mouseleave', removeCursorHover);
 }
 
-blobCursor();
+blobCursor(); 
     </script>
 
 </html>
