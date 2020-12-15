@@ -2,8 +2,8 @@
 
 :root {
     --text-color: #3E0C5E;
-    --background-color: #fff2eb;
     --secondary-color: #CB0072;
+
 }
 
 * {
@@ -23,7 +23,7 @@ body {
     line-height: 1.5;
     color: var(--text-color);
     padding: 0% 10% 0% 15%;
-    background-color: #fff2eb    
+    background-color: #fff2eb;    
 }
 
 main {
@@ -156,8 +156,8 @@ nav {
 }
 
 .logo {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--text-color);
@@ -169,11 +169,11 @@ ul li {
 a {
     color: #3F0D5E;
     text-decoration: none;
-        font-weight: 500;
+    font-weight: 500;
 }
 
-a.hover{
-    color: #3F0D5E;
+a:hover{
+    color: #CB0071 ;
 }
 
 ul li a {
@@ -196,7 +196,7 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 @media screen and (min-width: 768px) {
@@ -231,12 +231,12 @@ ul li a {
 }
 
 .portfolio__image {
-    width: 90%;
+    width: 100%;
 }
 
 
 
-/********* CONTACT *********/
+/******* CONTACT *******/
 
 .contact__content {
     padding: 50px 0;
@@ -444,9 +444,10 @@ footer {
     color: var(--secondary-color);
 }
 
+
 #cursor-blob {
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   background: linear-gradient(
     120deg,
     #FF414D,
@@ -457,7 +458,7 @@ footer {
   );
   background-size: 1600% 1600%;
   position: absolute;
-  mix-blend-mode:hue;
+  mix-blend-mode: difference;
   pointer-events: none;
   z-index: 1;
   
@@ -465,18 +466,13 @@ footer {
   animation: blob-radius 5s ease infinite, blob-background 15s ease infinite;
 }
 
-.wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background: #111111
-}
+
 
 .link {
   cursor: pointer;
-  font-size: 10vw;
+    font-size: 20px;
+     font-weight: 600;
+    text-transform: uppercase;
   transition: transform 0.25s ease;
 }
 .link:hover {
@@ -499,3 +495,4 @@ footer {
     background-position: 100% 50%;
   }
 }
+
