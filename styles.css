@@ -540,7 +540,7 @@ details p {
     .header__content {
         flex-wrap: wrap;
     }
-    .cursor-blob {
+    #cursor-blob {
         display: none;
     }
     
