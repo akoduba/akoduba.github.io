@@ -342,7 +342,7 @@ footer {
 
 .footer__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     
 
 }
@@ -350,23 +350,20 @@ footer {
 .footer__content .footer__nav__link:first-child {
     text-decoration: none;
     text-transform: uppercase;
-    flex-basis: 80%;
     text-decoration: underline;
 }
 
 .footer__nav {
     display: flex;
     justify-content: flex-end;
+    color: #CB0071; 
+    font-size: 15px; 
+    font-weight: 500; 
 }
 
-.footer__nav li {
-    width: 10%;
-    padding-left: 10px;
-}
 
 @media only screen and (min-width: 768px) {
     footer {
-        position: fixed;
         left: 0;
         bottom: 0;
         right: 0;
