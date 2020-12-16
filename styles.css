@@ -22,7 +22,7 @@ body {
     font-weight: 300;
     line-height: 1.5;
     color: var(--text-color);
-    padding: 0% 10% 0% 15%;
+    padding: 0 20px;
     background-color: #fff2eb;    
 }
 
@@ -221,17 +221,28 @@ ul li a {
 @media only screen and (min-width: 1200px) {
 
     .portfolio__item {
-        flex-basis: 49%;
+        flex-basis: 45%;
+        margin: 20px;
 
     }
+    .grid .portfolio__item{
+        flex-basis: 28%;
+}
 
-    .portfolio__item:nth-child(odd) {
+/*    .portfolio__item:nth-child(odd) {
         margin-right: 20px;
-    }
+    } */
 }
 
 .portfolio__image {
     width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.portfolio_home img
+{
+    height: 400px;
 }
 
 
@@ -305,6 +316,7 @@ textarea::placeholder {
     input[type="submit"] {
         width: 20%;
         float: right;
+        color: #fff2eb;
     }
 }
 
@@ -379,7 +391,6 @@ footer {
 
 @media screen and (min-width: 1200px) {
     .about__page .header__content {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -394,10 +405,12 @@ footer {
 }
 
 
-.portfolio__page .portfolio__items {
+.portfolio__page .portfolio__items  {
     display: flex;
     padding-bottom: 40px;
 }
+
+
 
 .portfolio__page .header__content {
     display: flex;
@@ -410,6 +423,7 @@ footer {
     .portfolio__page .header__content h1 {
         font-size: 52px;
         margin-bottom: 0;
+    
     }
     .portfolio__page .header__content {
             padding: 130px 0 50px 0;
@@ -419,7 +433,15 @@ footer {
         max-width: 850px;
         line-height: 2;
     }
+    body {
+            padding: 0% 10% 0% 15%;
+    }
 }
+
+details p {
+    text-align: justify;
+}
+
 .portfolio__page .header__content h1 {
     text-align: left;
 }
@@ -475,9 +497,7 @@ footer {
     text-transform: uppercase;
   transition: transform 0.25s ease;
 }
-.link:hover {
-  transform: translateX(25px);
-}
+
 
 /* Keyframes */
 @keyframes blob-radius {
@@ -496,3 +516,6 @@ footer {
   }
 }
 
+.iframe_container {
+    padding-left: 60px;
+}

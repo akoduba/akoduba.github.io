@@ -9,14 +9,14 @@
      <title>Ayoola Princewill</title>
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-     <div id="cursor-blob"></div>
+     
 </head>
 
 <body>
     
            
 
-
+<div id="cursor-blob"></div>
     <main>
               
 
@@ -24,9 +24,9 @@
             
             <div class="container navigation__content">
                 
-                <a href="index.html" class="logo, link">Ayoola Princewill</a>
+                <a href="index.html" class="logo link">Ayoola Princewill</a>
                 <ul class="nav">
-                    <li><a href="about.html" class="nav__link" style="color: #CB0071; font-size: 20px; font weight: 600">About Me</a></li>
+                    <li><a href="about.html" class="nav__link link" style="color: #CB0071; font-size: 20px; font weight: 600">About Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -45,41 +45,37 @@
         
          <!-- Portfolio -->
         <section class="portfolio">
-            <div class="container portfolio__content">
+            <div class="container portfolio__content portfolio_home">
                 
            
                 
                 <div class="portfolio__items"> 
-                    <a href="portfolio-one.html" class="portfolio__item">
+                    <a href="portfolio-one.html" class="portfolio__item link">
                         <img src="images/spencer-lbqLxgvLt0U-unsplash.jpg" alt="Portfolio Item" class="portfolio__image">
                         <h2>Arduino Doorbell Prototype</h2>
                     </a>
                     
                     
                     
-                    <a href="portfolio-two.html" class="portfolio__item">
+                    <a href="portfolio-two.html" class="portfolio__item link">
                         <img src="images/Welcome_1.0.jpg" alt="Portfolio Item" class="portfolio__image">
                         <h2>Self Service Beauty App</h2>
                     </a>
                     
                     
-                    <a href="portfolio-three.html" class="portfolio__item">
+                    <a href="portfolio-three.html" class="portfolio__item link">
                         <img src="images/IMG_3997-Edit.jpg" alt="Portfolio Item" class="portfolio__image">
                         <h2>Photography</h2>
                     </a>
                     
-                    <a href="portfolio-four.html" class="portfolio__item">
-                        <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
-                        <h2>Photography</h2>
-                    </a>
                     
-                    <a href="portfolio-three.html" class="portfolio__item">
-                        <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
+                    <a href="portfolio-three.html" class="portfolio__item link">
+                        <img src="images/pexels-francesco-paggiaro-2111015.jpg" alt="Portfolio Item" class="portfolio__image">
                         <h2>Audio Editing</h2>
                     </a>
                     
-                    <a href="portfolio-four.html" class="portfolio__item">
-                        <img src="./images/test-image.jpg" alt="Portfolio Item" class="portfolio__image">
+                    <a href="portfolio-four.html" class="portfolio__item link">
+                        <img src="images/curencyDesign.jpg" alt="Portfolio Item" class="portfolio__image">
                         <h2>Others </h2>
                     </a>
                     
@@ -108,43 +104,18 @@
         <footer class="footer">
             <div class="container footer__content">
                 
-                <a href="#contact" class="footer__nav__link" style="color: #CB0071; font-size: 20px; font weight: 600">Contact</a>
+                <a href="#contact" class="footer__nav__link link" style="color: #CB0071; font-size: 20px; font weight: 600">Contact</a>
                 <ul class="footer__nav">
-                    <li><a href="about.html" class="footer__nav__link"><img src="./images/instagram.svg" alt="Instagram"></a></li>
-                    <li><a href="about.html" class="footer__nav__link"><img src="./images/twitter.svg" alt="Instagram"></a></li>
+                    <li><a href="about.html" class="footer__nav__link link"><img src="./images/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="about.html" class="footer__nav__link link"><img src="./images/twitter.svg" alt="Instagram"></a></li>
                 </ul>
             </div>
         </footer>
     </main>
 </body>
     
-    <script>
-   const blobCursor = function() {
-  const cursor = document.querySelector('#cursor-blob');
-  const link = document.querySelector('.link');
-  
-  const setCursorPos = (e) => {
-    let posX = e.pageX;
-    let posY = e.pageY;
-    
-    cursor.style.top = posY - (cursor.offsetHeight/2) + 'px';
-    cursor.style.left = posX - (cursor.offsetWidth/2) + 'px';
-  }
-  
-  document.addEventListener('mousemove', setCursorPos);
-  
-  const setCursorHover = function() {
-    cursor.style.transform = 'scale(2.5)';
-  }
-  const removeCursorHover = function() {
-    cursor.style.transform = '';
-  }
-  
-  link.addEventListener('mouseover', setCursorHover);
-  link.addEventListener('mouseleave', removeCursorHover);
-}
-
-blobCursor(); 
+    <script src="main.js" async>
+   
     </script>
 
 </html>
