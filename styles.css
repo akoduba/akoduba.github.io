@@ -16,6 +16,10 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
@@ -144,7 +148,10 @@ nav {
         width: 100%;
        
     }
+    .link{
+    font-size: 20px;
 }
+    }
 
 
 .navigation__content {
@@ -189,6 +196,9 @@ ul li a {
         font-weight: 500;
     }
 }
+
+
+
 
 /********* HEADER *********/
 
@@ -492,7 +502,6 @@ details p {
 
 .link {
   cursor: pointer;
-    font-size: 20px;
      font-weight: 600;
     text-transform: uppercase;
   transition: transform 0.25s ease;
@@ -518,4 +527,21 @@ details p {
 
 .iframe_container {
     padding-left: 60px;
+}
+
+
+
+@media only screen and (max-width: 500px) 
+{
+    .link {
+    font-size: 16px;
+    }
+    
+    h2{
+        font-size: 18px;
+    }
+    .header__content {
+        flex-wrap: wrap;
+    }
+    
 }
