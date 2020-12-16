@@ -540,5 +540,8 @@ details p {
     .header__content {
         flex-wrap: wrap;
     }
+    .cursor-blob {
+        display: none;
+    }
     
 }
